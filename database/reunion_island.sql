@@ -13,8 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données: `reunion_island`
 --
-CREATE DATABASE IF NOT EXISTS `reunion_island` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `reunion_island`;
+ CREATE DATABASE IF NOT EXISTS `reunion_island` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+ USE `reunion_island`;
 
 -- --------------------------------------------------------
 
@@ -30,5 +30,13 @@ CREATE TABLE IF NOT EXISTS `hiking` (
   `distance` int(11) NOT NULL COMMENT 'in km',
   `duration` time NOT NULL,
   `height_difference` int(6) NOT NULL COMMENT 'in m',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
+CREATE TABLE IF NOT EXISTS `testaj` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

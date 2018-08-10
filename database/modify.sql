@@ -1,0 +1,3 @@
+ALTER TABLE hiking
+ADD COLUMN available INT(1) NOT NULL;
+
